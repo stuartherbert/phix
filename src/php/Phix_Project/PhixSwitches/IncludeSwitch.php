@@ -64,7 +64,7 @@ class IncludeSwitch extends SwitchBase
                         }
 
                         $context->addSearchPath($path);
-                        \__gwc_autoload_alsoSearch(\realpath($path));
+                        \psr0_autoloader_searchFirst(\realpath($path));
                 }
 
                 // we do not want phix to terminate yet
