@@ -56,8 +56,6 @@ use Phix_Project\PhixHelpers\SwitchesHelper;
 use Phix_Project\CommandLineLib\DefinedSwitches;
 use Phix_Project\CommandLineLib\DefinedSwitch;
 
-if (!\class_exists('Phix_Project\PhixCommands\HelpCommand'))
-{
 class HelpCommand extends CommandBase implements CommandInterface
 {
         public function getCommandName()
@@ -110,8 +108,9 @@ class HelpCommand extends CommandBase implements CommandInterface
                 $so = $context->stdout;
 
                 $so->output($context->highlightStyle, "phix " . $context->version);
-                $so->outputLine($context->urlStyle, ' http://gradwell.github.com');
-                $so->outputLine(null, 'Copyright (c) 2010 Gradwell dot com Ltd. Released under the BSD license');
+                $so->outputLine($context->urlStyle, ' http://www.phix-project.org');
+		$so->outputLine(null, 'Copyright (c) 2011 Stuart Herbert and contributors');
+	       	$so->outputLine(null, 'Released under the BSD license');
                 $so->outputBlankLine();
                 $this->showPhixSwitchSummary($context, $sortedSwitches);
                 $this->showPhixSwitchDetails($context, $sortedSwitches);
@@ -197,4 +196,4 @@ class HelpCommand extends CommandBase implements CommandInterface
                 $so->outputLine(null, ' for detailed help on <command>');
         }
 }
-}
+
