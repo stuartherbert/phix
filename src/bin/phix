@@ -25,7 +25,7 @@ foreach ($searchFolders as $searchFolder)
 {
         if (is_dir($searchFolder))
         {
-                psr0_autoloader_searchLast($searchFolder);
+                psr0_autoloader_searchFirst($searchFolder);
         }
 }
 
