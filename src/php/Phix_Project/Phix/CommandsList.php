@@ -69,7 +69,11 @@ class CommandsList
                 $commandName = $newCommand->getCommandName();
                 $commandDesc = $newCommand->getCommandDesc();
 
-                $this->commands[$commandName] = $newCommand;
+		// only add the command if we have not seen it before
+		if (!isset($this->commands[$commandName]))
+		{
+		        $this->commands[$commandName] = $newCommand;
+		}
         }
 
         public function testHasCommand($commandName)
