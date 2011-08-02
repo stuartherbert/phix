@@ -4,15 +4,15 @@
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
   <name>phix</name>
-  <channel>pear.gradwell.com</channel>
+  <channel>pear.phix-project.org</channel>
   <summary>Framework-agnostic command-line util for PHP development</summary>
   <description>
     A handy command-line tool to provide structure to any commands / tasks you need to run on the command line.
   </description>
   <lead>
     <name>Stuart Herbert</name>
-    <user>stuherbert</user>
-    <email>stuart.herbert@gradwell.com</email>
+    <user>stuart</user>
+    <email>stuart@stuartherbert.com</email>
     <active>yes</active>
   </lead>
   <date>${build.date}</date>
@@ -44,27 +44,27 @@ ${contents}
       </pearinstaller>
       <package>
         <name>Autoloader</name>
-        <channel>pear.gradwell.com</channel>
-        <min>2.0.0</min>
-	      <max>2.999.9999</max>
+        <channel>pear.phix-project.org</channel>
+        <min>3.0.0</min>
+	      <max>3.999.9999</max>
       </package>
       <package>
         <name>CommandLineLib</name>
-        <channel>pear.gradwell.com</channel>
-        <min>1.0.0</min>
-        <max>1.999.9999</max>
-      </package>
-      <package>
-        <name>ConsoleDisplayLib</name>
-        <channel>pear.gradwell.com</channel>
+        <channel>pear.phix-project.org</channel>
         <min>2.0.0</min>
         <max>2.999.9999</max>
       </package>
       <package>
+        <name>ConsoleDisplayLib</name>
+        <channel>pear.phix-project.org</channel>
+        <min>3.0.0</min>
+        <max>3.999.9999</max>
+      </package>
+      <package>
         <name>ValidationLib</name>
-        <channel>pear.gradwell.com</channel>
-        <min>1.0.0</min>
-        <max>1.999.9999</max>
+        <channel>pear.phix-project.org</channel>
+        <min>2.0.0</min>
+        <max>2.999.9999</max>
       </package>
       <extension>
         <name>posix</name>
@@ -85,7 +85,7 @@ ${contents}
       <date>2010-11-04</date>
       <license>New-BSD</license>
       <notes>
-See http://gradwell.github.com for more details.
+See http://www.phix-project.org for more details.
       </notes>
     </release>
   </changelog>
