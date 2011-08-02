@@ -107,7 +107,8 @@ class HelpCommand extends CommandBase implements CommandInterface
 
                 $so = $context->stdout;
 
-                $so->output($context->highlightStyle, "phix " . $context->version);
+		$so->output($context->highlightStyle, "phix " . $context->version);
+		$so->output(null, ' - ');
                 $so->outputLine($context->urlStyle, ' http://www.phix-project.org');
 		$so->outputLine(null, 'Copyright (c) 2011 Stuart Herbert and contributors');
 	       	$so->outputLine(null, 'Released under the BSD license');
