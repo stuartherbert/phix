@@ -64,8 +64,11 @@ class CommandsFinderTest extends \PHPUnit_Framework_TestCase
                 $phpSearchPath = explode(\PATH_SEPARATOR, \get_include_path());
                 $finalSearchPath = array();
                 foreach ($phpSearchPath as $folder)
-                {
-                        $finalSearchPath[$folder] = $folder;
+		{
+			if (\is_dir(\realpath($folder)))
+			{
+				$finalSearchPath[$folder] = $folder;
+			}
                 }
                 $this->assertEquals($finalSearchPath, $folders);
         }
@@ -81,8 +84,11 @@ class CommandsFinderTest extends \PHPUnit_Framework_TestCase
                 $phpSearchPath = explode(\PATH_SEPARATOR, \get_include_path());
                 $finalSearchPath = array();
                 foreach ($phpSearchPath as $folder)
-                {
-                        $finalSearchPath[$folder] = $folder;
+		{
+			if (\is_dir(\realpath($folder)))
+			{
+				$finalSearchPath[$folder] = $folder;
+			}
                 }
                 $finalSearchPath['/usr/bin'] = '/usr/bin';
                 $this->assertEquals($finalSearchPath, $folders);

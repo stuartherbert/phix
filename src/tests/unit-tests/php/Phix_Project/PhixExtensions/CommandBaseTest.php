@@ -342,7 +342,7 @@ IMPLEMENTATION
 
     which is defined in the file:
 
-    * /home/stuarth/Devel/GWC/phix/src/tests/unit-tests/php/Phix_Project
+    * /home/stuart/Devel/Phix/phix/src/tests/unit-tests/php/Phix_Project
       /PhixExtensions/CommandBaseTest.php
 
 EOS;
@@ -390,7 +390,7 @@ IMPLEMENTATION
 
     which is defined in the file:
 
-    * /home/stuarth/Devel/GWC/phix/src/tests/unit-tests/php/Phix_Project
+    * /home/stuart/Devel/Phix/phix/src/tests/unit-tests/php/Phix_Project
       /PhixExtensions/CommandBaseTest.php
 
 EOS;
@@ -443,7 +443,7 @@ IMPLEMENTATION
 
     which is defined in the file:
 
-    * /home/stuarth/Devel/GWC/phix/src/tests/unit-tests/php/Phix_Project
+    * /home/stuart/Devel/Phix/phix/src/tests/unit-tests/php/Phix_Project
       /PhixExtensions/CommandBaseTest.php
 
 EOS;

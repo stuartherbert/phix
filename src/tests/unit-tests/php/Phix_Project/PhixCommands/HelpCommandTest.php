@@ -235,7 +235,7 @@ IMPLEMENTATION
 
     which is defined in the file:
 
-    * /home/stuarth/Devel/GWC/phix/src/php/Phix_Project/PhixCommands
+    * /home/stuart/Devel/Phix/phix/src/php/Phix_Project/PhixCommands
       /HelpCommand.php
 
 EOS;
