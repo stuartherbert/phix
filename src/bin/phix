@@ -2,15 +2,15 @@
 <?php
 
 // where is our autoloader? is it installed locally?
-if (file_exists(__DIR__ . '/../php/gwc.autoloader.php'))
+if (file_exists(__DIR__ . '/../php/psr0.autoloader.php'))
 {
         // yes it is
-        require_once(__DIR__ . '/../php/gwc.autoloader.php');
+        require_once(__DIR__ . '/../php/psr0.autoloader.php');
 }
 else
 {
         // no it is not - look for a global install
-        require_once("@@PHP_DIR@@/gwc.autoloader.php");
+        require_once("@@PHP_DIR@@/psr0.autoloader.php");
 }
 
 // a list of places to look for phix commands
@@ -25,7 +25,7 @@ foreach ($searchFolders as $searchFolder)
 {
         if (is_dir($searchFolder))
         {
-                __gwc_autoload_alsoSearch($searchFolder);
+                __autoloader_alsoSearch($searchFolder);
         }
 }
 
