@@ -9,7 +9,7 @@ System-Wide Installation
 phix should be installed using the [PEAR Installer](http://pear.php.net). This installer is the community's de-facto standard for distributing PHP components.
 
     sudo pear channel-discover pear.phix-project.org
-    sudo pear install --alldeps Gradwell/phix
+    sudo pear install --alldeps stuartherbert/phix
 
 After installation, you will find phix inside your local PEAR repository, which on Linux systems is normally /usr/share/php.
 
@@ -56,7 +56,7 @@ If you want to patch or enhance this component, you will need to create a suitab
 
     # phix
     sudo pear channel-discover pear.phix-project.org
-    sudo pear install --alldeps Gradwell/phix
+    sudo pear install --alldeps phix/phix
 
 You can then clone the git repository:
 
