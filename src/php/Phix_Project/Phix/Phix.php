@@ -72,6 +72,12 @@ class Phix
 
                 // Register error handler
                 \set_error_handler(array($this, 'errorHandler'));
+                
+                // set process title if extension is available
+                if (function_exists('setproctitle'))
+                {
+                        setproctitle('phix');
+                }
 
                 // step 1: parse the command-line args
                 // we do this first because it may change where we look
