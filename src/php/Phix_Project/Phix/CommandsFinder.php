@@ -57,15 +57,7 @@ class CommandsFinder
 
         public function addPhpSearchPathToSearchList()
         {
-                foreach (explode(\PATH_SEPARATOR, \get_include_path()) as $path)
-		{
-			// skip any folders in the include_path that do
-			// not actually exist
-			if (\is_dir(realpath($path)))
-			{
-				$this->addFolderToSearch($path);
-			}
-                }
+                $this->addFolderToSearch("@@PHP_DIR@@");
         }
 
         public function addFolderToSearch($folder)
