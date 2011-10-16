@@ -60,8 +60,8 @@ ${contents}
       <package>
         <name>ValidationLib</name>
         <channel>pear.phix-project.org</channel>
-        <min>2.0.0</min>
-        <max>2.999.9999</max>
+        <min>3.0.0</min>
+        <max>3.999.9999</max>
       </package>
       <extension>
         <name>posix</name>
