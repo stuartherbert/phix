@@ -62,6 +62,12 @@ class DebugSwitch extends SwitchBase
                         $context->debugLevel = 5;
                 }
 
+                // enable detecting developer bugs                
+                if (class_exists('Phix_Project\ContractLib\Contract'))
+                {
+                        \Phix_Project\ContractLib\Contract::EnforceWrappedContracts();
+                }
+                
                 // we do not want execution to stop
                 return null;
         }
