@@ -63,9 +63,6 @@ ${contents}
         <min>3.0.0</min>
         <max>3.999.9999</max>
       </package>
-      <extension>
-        <name>posix</name>
-      </extension>
     </required>
   </dependencies>
   <phprelease/>
